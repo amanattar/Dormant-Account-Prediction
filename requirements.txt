@@ -53,3 +53,6 @@ Werkzeug==2.0.1
 wincertstore==0.2
 wrapt==1.12.1
 gunicorn==20.1.0
+passlib==1.7.4
+SQLAlchemy==1.4.18
+gevent==21.1.2
