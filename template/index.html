@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dormant Acoount Predictor</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Predictive analysis</h2>
+            <h3>Jan-June</h3><input id="first" name="Jan_June" required="required" type="number ">
+            <br>
+            <h3>July-Dec</h3><input id="second" name="July_Dec" required="required" type="number ">
+            <br><br><button id="sub" type="submit ">Calculate Dormancy</button>
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+</body>
+
+</html>
